@@ -1,0 +1,67 @@
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--raisin);
+    background-image: url('space.webp');
+    background-size: cover;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 7rem;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 7rem 0 -9rem;
+}
+
+.title:hover {
+    color: var(--blue);
+}
+
+.highlight:hover {
+    color: var(--yellow);
+}
+
+.planet {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--bg-color);
+    background: conic-gradient(var(--raisin) 0deg 180deg, var(--bg-color) 160deg 360deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: 0px 5px 20px var(--bg-color);
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    transition: 0.3s ease-in-out all;
+    color: var(--bg-color);
+    text-shadow: 0px 0px 5px var(--bg-color);
+    font-size: 2.25rem;
+    visibility: hidden;
+}
+
+.planet:hover .tooltip {
+      visibility: visible;
+}
