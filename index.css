@@ -29,6 +29,7 @@ body {
     text-align: center;
     letter-spacing: 4px;
     margin: 7rem 0 -9rem;
+    transition: 0.3s ease-in-out all;
 }
 
 .title:hover {
